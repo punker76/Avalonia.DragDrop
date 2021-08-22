@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ShowCase.ViewModels"
+        xmlns:dd="clr-namespace:Avalonia.DragDrop;assembly=Avalonia.DragDrop"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="450"
+        Width="800"
+        Height="450"
+        x:Class="ShowCase.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ShowCase">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <StackPanel Orientation="Vertical">
+
+        <TextBlock Text="{Binding Greeting}" Margin="4" FontSize="28" />
+
+        <Grid ColumnDefinitions="*,*" MinHeight="300" Margin="4">
+
+			<ListBox x:Name="ListBox1"
+                     dd:DragDrop.IsDragSource="True"
+                     dd:DragDrop.IsDropTarget="True"
+                     SelectionMode="Multiple"
+                     MinWidth="200"
+                     Margin="0 4 2 4"
+                     Grid.Column="0">
+                <ListBoxItem>Item 1</ListBoxItem>
+                <ListBoxItem>Item 2</ListBoxItem>
+                <ListBoxItem>Item 3</ListBoxItem>
+                <ListBoxItem>Item 4</ListBoxItem>
+                <ListBoxItem>Item 5</ListBoxItem>
+            </ListBox>
+
+			<ListBox x:Name="ListBox2"
+                     dd:DragDrop.IsDropTarget="True"
+                     MinWidth="200"
+                     Margin="2 4 0 4"
+                     Grid.Column="1">
+            </ListBox>
+
+        </Grid>
+
+	</StackPanel>
+
+</Window>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.DragDrop", "Avalonia.DragDrop\Avalonia.DragDrop.csproj", "{01B88367-1D17-4E3B-BFEE-D85A48DD688D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowCase", "ShowCase\ShowCase.csproj", "{7BD32FF8-E6A5-4F8A-8AA2-F7992FE3EE57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01B88367-1D17-4E3B-BFEE-D85A48DD688D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B88367-1D17-4E3B-BFEE-D85A48DD688D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B88367-1D17-4E3B-BFEE-D85A48DD688D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B88367-1D17-4E3B-BFEE-D85A48DD688D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD32FF8-E6A5-4F8A-8AA2-F7992FE3EE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD32FF8-E6A5-4F8A-8AA2-F7992FE3EE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD32FF8-E6A5-4F8A-8AA2-F7992FE3EE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD32FF8-E6A5-4F8A-8AA2-F7992FE3EE57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
